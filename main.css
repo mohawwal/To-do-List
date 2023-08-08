@@ -1,0 +1,124 @@
+*,
+*:after,
+*:before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    height: 100vh;
+    background: #b3d0ee;
+}
+.tittle {
+    display: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+    background-color: white;
+    min-width: 450px;
+    height: auto;
+    height: 100%;
+}
+
+.newTask {
+    margin-top: 30px;
+    display: flex;
+    align-items: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+}
+
+.newTask input {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+    height: 50px;
+    max-height: 80px;
+    border: 2px solid rgb(50, 49, 49);
+    border-radius: 10px 0 10px ;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.newTask input:focus {
+    outline: none;
+    border-color: rgb(51, 7, 17);
+}
+
+.newTask button {
+    color: rgb(246, 246, 246);
+    position: relative;
+    float: right;
+    font-size: 16px;
+    border: none;
+    background-color: #353c43;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.tasks-container {
+    width: 70%;
+    max-height: 100%;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+.tasks {
+    background-color: rgb(241, 241, 241);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.taskInput {
+    word-wrap: break-word;
+    white-space: normal;
+    width: 80%;
+    overflow-wrap: break-word;
+}
+
+.delete {
+    width: 15%;
+    border: none;
+    background: rgb(197, 197, 197);
+    padding: 10px 0;
+    margin: 5px;
+}
+
+.delete i {
+    font-size: 20px;
+}
+
+.delete i:hover,
+.delete:focus {
+    color: red;
+}
+
+
+@media (min-width: 400px) {
+
+   .tittle {
+    display: block;
+    margin-bottom: 100px;
+   }
+    .container {
+        width: 50%;
+        height: 50%;
+    }
+}
